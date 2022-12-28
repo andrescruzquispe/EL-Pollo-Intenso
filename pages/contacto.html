@@ -12,7 +12,7 @@
     <!-- Inica Encabezado -->
     <header>
         <!-- Inicia titulo de encabezado -->
-        <h1><a href="../index.html">El Pollo Intenso</a></h1>
+        <a href="../index.html" class="logo">El Pollo Intenso</a>
         <!-- Inicia Menu de navegacion -->
         <nav>
             <ul>
@@ -25,9 +25,9 @@
         </nav>
         <!-- Inicia encabezado en redes sociales -->
         <div class="logos-redes">
-            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="logo-facebook"></a>
-            <a href="https://www.instagram.com/?hl=es-la"><img src="../img/instagram.png" alt="logo-instagram"></a>
-            <a href="https://www.tiktok.com/foryou?lang=es"><img src="../img/tiktok.png" alt="logo-tiktok"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/foryou?lang=es" target="_blank"><img src="../img/tiktok.png" alt="Tiktok"></a>
         </div>
     </header>
     <main>
@@ -35,65 +35,64 @@
             <h1>Contacto</h1>
         </div>
         <!-- Inicio de contenedor de locales -->
-        <div class="contenedor-datos">
-            <h2>Datos</h2>
-            <div class="datos-texto">
-                <div class="primera-linea">
-                    <div class="nombres">
-                        <label for="nombres">Nombres:</label>
-                        <input type="text" placeholder="Andrés Eduardo" id="nombres">
+        <form action="">
+            <div class="contenedor-datos">
+                <h2>Datos</h2>
+                <div class="datos-texto">
+                    <div class="primera-linea">
+                        <div class="nombres">
+                            <label for="nombres">Nombres:</label>
+                            <input type="text" placeholder="Andrés Eduardo" id="nombres">
+                        </div>
+                        <div class="celular">
+                            <label for="celular">Celular:</label>
+                            <input type="tel" placeholder="989898989" id="celular">
+                        </div>
                     </div>
-                    <div class="celular">
-                        <label for="celular">Celular:</label>
-                        <input type="text" placeholder="989898989" id="celular">
+                    <div class="segunda-linea">
+                        <div class="apellidos">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" placeholder="Cruz Quispe" id="apellidos">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="text" placeholder="andres@email.com" id="email">
+                        </div>
                     </div>
                 </div>
-                <div class="segunda-linea">
-                    <div class="apellidos">
-                        <label for="apellidos">Apellidos:</label>
-                        <input type="text" placeholder="Cruz Quispe" id="apellidos">
-                    </div>
-                    <div class="email">
-                        <label for="email">Email:</label>
-                        <input type="text" placeholder="andres@email.com" id="email">
+            </div>   
+            
+            <div class="contenedor-total-consultas">
+                <h2>Detalle de consulta</h2>
+                <div class="contenedor-consultas">
+                    <div class="contenedor-consulta-texto">
+                        <div class="contenedor-local">
+                            <label for="local">Local:</label>
+                            <select>
+                                <option disabled selected>Seleccione un local</option>
+                                <option>Abancay 1</option>
+                                <option>Abancay 2</option>
+                                <option>Alcazar</option>
+                                <option>Angamos</option>
+                                <option>Arequipa</option>
+                                <option>Ate</option>
+                                <option>Aviacion 45</option>
+                                <option>Barranca</option>
+                                <option>Barranco 2</option>
+                                <option>Bellavista</option>
+                                <option>Benavides</option>
+                                <option>Callao 2</option>
+                            </select>
+                        </div>
+                        <div class="contenedor-describa-consulta">
+                            <label for="describa">Describa aquí su consulta:</label>
+                            <textarea name="" id="describa" placeholder="Su consulta es ....." cols="70" rows="7"></textarea>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>   
+        </form>
         
-        <div class="contenedor-total-consultas">
-            <h2>Detalle de consulta</h2>
-            <div class="contenedor-consultas">
-                <div class="contenedor-consulta-texto">
-                    <div class="contenedor-local">
-                        <label for="local">Local:</label>
-                        <select>
-                            <option disabled selected>Seleccione un local</option>
-                            <option>Abancay 1</option>
-                            <option>Abancay 2</option>
-                            <option>Alcazar</option>
-                            <option>Angamos</option>
-                            <option>Arequipa</option>
-                            <option>Ate</option>
-                            <option>Aviacion 45</option>
-                            <option>Barranca</option>
-                            <option>Barranco 2</option>
-                            <option>Bellavista</option>
-                            <option>Benavides</option>
-                            <option>Callao 2</option>
-                        </select>
-                    </div>
-                    <div class="contenedor-describa-consulta">
-                        <label for="describa">Describa aquí su consulta:</label>
-                        <textarea name="" id="describa" placeholder="Su consulta es ....." cols="42" rows="11"></textarea>
-                    </div>
-                </div>
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9391468531967!2d-77.026877!3d-12.047708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b1383158cd%3A0x9c41ffdaf57dbcaa!2sAv.%20Abancay%20252%2C%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1670363828214!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-
         <div class="botones">
             <div class="borrar">
                 <button type="reset">Borrar</button>
