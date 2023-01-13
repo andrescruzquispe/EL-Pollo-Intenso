@@ -22,9 +22,6 @@ header .logo{
     position: absolute;
     margin-top: 10px;
     margin-left: 30px;
-}
-
-header .logo{
     text-decoration: none;
     color: #FFD600;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -393,9 +390,17 @@ header nav ul li a:hover{
     background: #FF3FE0;    
 }
 
+.botones .borrar button:hover{
+    background: #d91bba;
+}
+
 .botones .enviar button{
     color: white;
     background: #FC7900;    
+}
+
+.botones .enviar button:hover{
+    background: #c66000;   
 }
 
 /* Pie de pagina */
@@ -410,4 +415,17 @@ footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+/****** ANIMACIONES ******/
+
+.scale:hover{
+    transform: scale(1.04);
+    transition: transform 0.4s;
+}
+
+.scaleX:hover{
+    transform: scaleX(1.06) scaleY(1.03);
+	transition: transform 0.4s;
 }
