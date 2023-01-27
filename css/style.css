@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -9,115 +10,65 @@ body{
 }
 
 /* Cabecera */
-header{
+.bg-rojo{
     background-color: #D60000;
-    width: 100%;
-    height: 70px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
 }
 
-header .logo{
-    text-decoration: none;
+.contenedor-logo{
+width: 30%;
+}
+
+.logo{
     color: #FFD600;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
 }
 
-header nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.logo:hover{
+    color: #FFD600;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+.navegacion{
     font-weight: bold;
     font-size: 20px;
-    padding: 15px;
+    color: white;
 }
 
-header nav ul li a:hover{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+.redsocial-tamanio{
+    width: 40px;
+    justify-content: space-between;
+}
+
+
+.navegacion:hover{
     color: rgb(205, 0, 0);
     background-color: #F2EADF;
-    font-weight: bold;
-    font-size: 20px;
 }
 
-.logos-redes{
-    display: flex;
-    gap: 13px;
-}
-
-.logos-redes img{
-    width: 40px;
-}
-
-@media (max-width: 1168px) {
+/* @media (max-width: 1168px) {
 	header {
         display: flex;
-		flex-direction: column;
+		flex-direction: column; */
         /* background-color: #009306; */
-        height: 100%;
+        /* height: 100%;
         gap: 10px;
 	}
 
-}
-
-/* Portada */
-.portada img{
-    width: 100%;
-}
+}*/
 
 /* Comida */
-.contenedor-total-comida{
-    margin: 50px 60px 50px 60px;
-    height: 670px;
-}
-
-.contenedor-total-comida h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.contenedor-comida{
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-comida-img{
-    width: 300px;
-}
-
-.comida-img img{
-    width: 100%;
-    border-radius: 22px 22px 0 0;
-}
-
 .comida-texto{
-    width: 100%;
     background-color: white;
     border-radius: 22px 22px 0 0;
-    height: 300px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .comida-texto h3{
     font-size: 24px;
     text-align: center;
     padding: 5px;
     margin-bottom: 40px;
     color: #009306;
+    font-weight: bold;
 }
 
 .comida-texto .descripcion{
@@ -142,36 +93,9 @@ header nav ul li a:hover{
 }
 
 /* Pollos */
-.contenedor-total-pollos{
-    margin: 0 60px 50px 60px;
-    height: 400px;
-}
-
-.contenedor-total-pollos h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.contenedor-pollos{
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-pollos-img{
-    display: flex;
-}
-
-.pollos-img img{
-    width: 300px;
-    border-radius: 22px 22px 0 0;
-}
-
 .pollos-texto{
-    width: 300px;
     background-color: white;
     border-radius: 22px 22px 0 0;
-    height: 300px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -181,6 +105,7 @@ header nav ul li a:hover{
     padding: 5px;
     margin-bottom: 40px;
     color: #009306;
+    font-weight: bold;
 }
 
 .pollos-texto .descripcion{
@@ -200,46 +125,39 @@ header nav ul li a:hover{
 /* Productos */
 .titulo h1{
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 40px;
+    padding: 40px 0 30px 0;
 }
 
-/* Promociones */
-.contenedor-total-promociones{
-    margin: 20px 60px 20px 60px;
-    height: 650px;
-}
 
 /* Locales */
-.contenedor-locales{
-    margin: 0 100px 50px 100px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%x;
-    height: 380px;
-}
-
-.local{
-    background-color: white;
-    width: 600px;
-    border-radius: 22px 22px 22px 22px;
-    height: 350px;
-}
-
 .local-texto{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    margin-left: 22px;
     font-size: 20px;
+    background-color: white;
+    width: 95%;
+    padding: 20px;
 }
 
-.local h3{
-    margin-top: 30px;
+.local-texto h3{
+    font-weight: bold;
 }
 
+.datos-titulo{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.datos-contenido{
+    font-size: 25px;
+}
+
+.datos-contenido input{
+    border: 1px solid rgb(174, 174, 174);
+    padding-left: 10px;
+}
 /* Datos */
-.contenedor-datos{
+/* .contenedor-datos{
     margin: 0 80px 20px 80px;
     height: 240px;
     font-family: Arial, Helvetica, sans-serif;
@@ -282,10 +200,34 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
 /* Describa su consulta */
-.contenedor-total-consultas{
+.consulta-titulo{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.consulta .contenedor-local{
+    font-size: 25px;
+}
+
+.consulta .contenedor-local select{
+    font-size: 20px;
+}
+
+.contenedor-describa-consulta{
+    font-size: 25px;
+}
+
+.contenedor-describa-consulta textarea{
+    border-radius: 10px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 10px;
+}
+
+/* .contenedor-total-consultas{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,7 +302,7 @@ header nav ul li a:hover{
     border: 1px solid rgb(174, 174, 174);
     display: block;
     padding: 10px;
-}
+} */
 
 
 /* Botones */
@@ -399,17 +341,16 @@ header nav ul li a:hover{
 }
 
 /* Pie de pagina */
-footer{
+#footer{
     background-color: #FFE49E;
 }
 
-footer p{    
+#footer p{    
     color: #AC7200;
-    margin-left: 540px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
+	text-align: center;
 }
 
 
