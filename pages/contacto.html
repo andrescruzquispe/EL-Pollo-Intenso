@@ -50,7 +50,7 @@
         </div>
         <!-- Inicio de contenedor de locales -->
         <form action="">
-            <section class="datos container d-flex flex-column mb-5">
+            <section class="container d-flex flex-column mb-5">
                     <h2 class="datos-titulo">Datos</h2>
                     <div class="row datos-contenido">
                         <div class="col-sm-12 col-md-6 nombres  mb-3">
@@ -98,24 +98,24 @@
                     </div>
                     <div class="contenedor-describa-consulta d-flex flex-column mb-5">
                         <label for="describa">Describa aquí su consulta:</label>
-                        <textarea name="" id="describa" placeholder="Su consulta es ....." cols="70" rows="7"></textarea>
+                        <!-- <textarea name="" id="describa" placeholder="Su consulta es ....." cols="70" rows="7"></textarea> -->
+                        <textarea class="form-control" placeholder="Su consulta es ....." cols="70" rows="7" id="floatingTextarea"></textarea>
                     </div>
                 </div>
               
             </section>
         </form>
-       
 
-        </section>
-        <div class="botones">
-            <div class="borrar">
-                <button type="reset">Borrar</button>
-            </div>
-            <div class="enviar">
-                <button type="submit">Enviar</button>
+        <div class="container">
+            <div class="botones">
+                <div class="borrar">
+                    <button type="reset" class="btn btn-primary">Borrar</button>
+                </div>
+                <div class="enviar">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </div>
         </div>
-
     </main>
 
     <footer id="footer">
