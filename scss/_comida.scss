@@ -1,0 +1,48 @@
+.comida-texto{
+    background-color: white;
+    border-radius: 22px 22px 0 0;
+    
+    h3{
+        font-size: 24px;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 40px;
+        color: #009306;
+        font-weight: bold;
+    }
+
+    .descripcion1{
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .descripcion2{
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .precio{
+        color: #C20000;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    } 
+}
+
+@media (max-width: 575px) {
+    .pollo1,.pollo2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1199px) {
+    .pollo1,.pollo2{
+        display: flex;
+        flex-direction: column;
+    }
+}

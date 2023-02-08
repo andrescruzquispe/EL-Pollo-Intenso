@@ -1,0 +1,56 @@
+.bg-rojo{
+    background-color: #D60000;
+}
+
+.contenedor-logo{
+    width: 30%;
+}
+
+.logo{
+    color: #FFD600;
+    font-weight: bold;
+    font-size: 40px;
+
+    &:hover{
+        color: #FFD600;
+    }
+}
+
+@media (max-width: 1190px) {
+    .logo {
+        font-size: 32px;
+    }
+}
+
+.navegacion{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 1190px) {
+    .navegacion{
+        font-size: 17px;
+        margin: 5px;
+    }
+}
+
+.redsocial-tamanio{
+    width: 40px;
+    justify-content: space-between;
+}
+
+
+.navegacion:hover{
+    color: rgb(205, 0, 0);
+    background-color: #F2EADF;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border: 0;
+} 
